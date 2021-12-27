@@ -1,0 +1,73 @@
+
+<nav class="navbar navbar-light bg-info">
+    <div class="container-fluid">
+        <h1>Login Page</h1>
+        <div class="d-flex">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">User Login</button>
+        </div>
+    </div>
+</nav>
+
+
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col"> id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">password</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Id</td>
+          <td>shital</td>
+          <td>shital7@gmail.com</td>
+          <td>abc</td>
+          <td>8329667507</td>
+          <td><button>Post</button></td>
+      </tr>
+  </tbody>
+</table>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login User</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="userForm">
+              <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" formControlName="Name" id="name" placeholder="Name">
+              </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" formControlName="Email" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+               </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" formControlName="Password" id="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label>Contact</label>
+                  <input type="tel" class="form-control" formControlName="Contact" id="contact" placeholder="Contact">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>

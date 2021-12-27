@@ -1,0 +1,41 @@
+{
+    "user": [
+      { 
+        "id": 1,
+        "Name": "shital", 
+        "Email": "shitalpadole7@gmail.com" ,
+        "Pasword":"1234",
+        "Contact":8329667507
+    }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
